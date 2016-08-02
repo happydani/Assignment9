@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/demo-styles.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#responsive-menu').mobileMenu();
+		});
+	</script>
+</head>
+
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="VectaCorp is your Home for scalable e-Business Solutions ">Home</a></li>
+				<li><a href="aboutus.html" title="Our expertise in strategy, design and technology allows us to create business solutions that excite and inspire">About Us</a></li>
+				<li><a href="solutions.html" title="We help companies reach prospects, converting prospects to customers, and retain those customers">Solutions</a></li>
+				<li><a href="support.html" title="Articles, tips, patches, documentation and user communities">Support</a></li>
+				<li><a href="contactus.html" title="Let us know what's on  your mind">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+
+		<section id="welcome" class="eleven columns">
+			<h4>Contact Us</h4>
+			<!--<form name="contactform" action="http://www.vectacorp.com/vc/scripts/contactus.asp" method="post">-->
+			<form name="contactform" id="contactform" action="#">
+				<fieldset style="border:none">
+					<legend>Contact a Sales Representative</legend>
+					Name:
+					<input type="text" name="name" maxlength="30" required="" value="Dani"> Company Name:
+					<input type="text" name="companyname" maxlength="30" required="" value="LSM"> Phone:
+					<input type="tel" name="phonenumber" maxlength="25" required="" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 555-555-5555" value="858-922-7293"> Email:
+					<input type="email" name="email" maxlength="30" required="" value="dabu@kmm.com">
+					<div class="toggle-wrap">
+						<p>What VectaCorp products are you interested in?</p>
+						<div class="toggles">
+							<label for="vProspect">
+								<input type="checkbox" name="product" value="vProspect" id="vProspect" class="toggle brand-toggle">vProspect 2.0</label>
+							<label for="vConvert">
+								<input type="checkbox" name="product" value="vConvert" id="vConvert" class="toggle brand-toggle">vConvert 2.0</label>
+							<label for="vRetain">
+								<input type="checkbox" name="product" value="vRetain" id="vRetain" class="toggle brand-toggle">vRetain 1.0</label>
+						</div>
+						<br />
+					</div>
+
+					<div class="brand-wrap">
+						<p>What is your current infrastructure?
+						</p>
+						<div class="brand">
+							<label for="Mac">
+								<input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
+							<label for="Linux">
+								<input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
+							<label for="Unix">
+								<input type="radio" name="infrastructure" value="Unix" id="Unix">Unix</label>
+							<label for="Windows">
+								<input type="radio" name="infrastructure" value="Windows" id="Windows" checked>Windows</label>
+						</div>
+					</div>
+
+
+					<br> <p>How many employees do you have?</p>
+					<p>
+						<select name="companysize" id="companysize">
+							<option disabled selected>Please pick one</option>
+							<option value="1-10">1-10</option>
+							<option value="11-100">11-100</option>
+							<option value="101-1000">101-1000</option>
+							<option value="More than 1000">More than 1000</option>
+						</select>
+					</p>
+					<p>How did you hear about us?</p>
+					<select name="hearaboutus" multiple="" size="5">
+						<option value="Magazine Ad">Magazine Ad</option>
+						<option value="Radio Ad">Radio Ad</option>
+						<option value="TV Ad">TV Ad</option>
+						<option value="Word of Mouth">Word of Mouth</option>
+						<option value="Other">Other</option>
+					</select>
+
+					Questions or comments for our sales representatives?
+					<textarea name="questions" size="30" rows="5"></textarea>
+					<div id="dialog" title="Basic dialog">
+						<p>Thank you for their inquiry. We will be in touch shortly!</p>
+					</div>
+					<button id="opener" >Submit</button>
+				</fieldset>
+			</form>
+		</section>
+
+		<section id="testimonials" class="five columns">
+			<h4>Map</h4>
+			<p>&nbsp;</p>
+
+		</section>
+
+	</main>
+
+</body>
+
+</html>

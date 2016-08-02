@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollUp.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#responsive-menu').mobileMenu();
+			$("#sticker").sticky({
+				topSpacing: 0
+			});
+			$(document).scrollUp({
+				scrollName: 'scrollUp', // Element ID
+				topDistance: '800', // Distance from top before showing element (px)
+				topSpeed: 300, // Speed back to top (ms)
+				animation: 'fade', // Fade, slide, none
+				animationInSpeed: 200, // Animation in speed (ms)
+				animationOutSpeed: 200, // Animation out speed (ms)
+				scrollText: 'Scroll to top', // Text for element
+				activeOverlay: '#00ffff' // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="VectaCorp is your Home for scalable e-Business Solutions ">Home</a></li>
+				<li><a href="aboutus.html" title="Our expertise in strategy, design and technology allows us to create business solutions that excite and inspire">About Us</a></li>
+				<li><a href="solutions.html" title="We help companies reach prospects, converting prospects to customers, and retain those customers">Solutions</a></li>
+				<li><a href="support.html" title="Articles, tips, patches, documentation and user communities">Support</a></li>
+				<li><a href="contactus.html" title="Let us know what's on  your mind">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+
+		<section id="welcome" class="eleven columns">
+			<div id="scrollup">
+				<h4>Our Solutions</h4></div>
+
+			<p>With innovative approaches and advanced methodologies, Vecta Corp. provides scalable business solutions to help companies achieve success through revenue increase, cost management and user satisfaction.</p>
+			<h5 id="approach">Approach</h5>
+			<p>Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+			<p>In order to effectively prospect, convert and retain, the user experience is placed at the center of all our development projects. Providing unique, memorable and positive experiences, striking the appropriate emotional connection and reducing mental effort required to interact with the site ultimately results in higher prospect conversion and customer retention figures.</p>
+
+			<h5 id="expertise">Expertise</h5>
+			<p>Our expertise in strategy, design and technology allows us to create business solutions that excite and inspire, are easy to navigate, and enable businesses to strengthen their competitive advantage.</p>
+			<p>With increased conversion and retention, our solutions provide companies with opportunities to increase revenues and enhance productivity. This is how we helped Dorknozzle achieve remarkable success, including more than doubling their customer base from 20,000 to 70,000 within 15 months of launching a Vecta Corp. solution.</p>
+			<p>With innovative approaches and advanced methodologies, Vecta Corp. provides scalable business solutions to help companies achieve success through revenue increase, cost management and user satisfaction.</p>
+
+			<h5 id="growth">Growth</h5>
+			<p>Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+			<p>In order to effectively prospect, convert and retain, the user experience is placed at the center of all our development projects. Providing unique, memorable and positive experiences, striking the appropriate emotional connection and reducing mental effort required to interact with the site ultimately results in higher prospect conversion and customer retention figures.</p>
+
+			<h5 id="service">Customer Service</h5>
+			<p>Our expertise in strategy, design and technology allows us to create business solutions that excite and inspire, are easy to navigate, and enable businesses to strengthen their competitive advantage.</p>
+			<p>With increased conversion and retention, our solutions provide companies with opportunities to increase revenues and enhance productivity. This is how we helped Dorknozzle achieve remarkable success, including more than doubling their customer base from 20,000 to 70,000 within 15 months of launching a Vecta Corp. solution.</p>
+
+			<p>&nbsp;</p>
+		</section>
+
+		<section id="testimonials" class="five columns">
+
+			<div id="sticker">
+				<h4>Quick Nav</h4>
+				<ul>
+					<li><a href="#approach"><h5>Approach</h5></a></li>
+					<li><a href="#expertise"><h5>Expertise</h5></a></li>
+					<li><a href="#growth"><h5>Growth</h5></a></li>
+					<li><a href="#service"><h5>Service</h5></a></li>
+				</ul>
+			</div>
+
+		</section>
+	</main>
+</body>
+
+</html>
